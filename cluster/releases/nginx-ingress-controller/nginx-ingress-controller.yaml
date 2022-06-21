@@ -21,6 +21,10 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: nginx-ingress-controller
+  install:
+    crds: Create
+  upgrade:
+    crds: CreateReplace
   interval: 1m0s
   releaseName: nginx-ingress-controller
   targetNamespace: nginx-ingress-controller

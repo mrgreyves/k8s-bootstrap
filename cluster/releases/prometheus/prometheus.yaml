@@ -21,6 +21,10 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: prometheus-community
+  install:
+    crds: Create
+  upgrade:
+    crds: CreateReplace
   values:
     prometheus:
       prometheusSpec:
