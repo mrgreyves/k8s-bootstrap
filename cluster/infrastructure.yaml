@@ -31,7 +31,7 @@ spec:
   path: ./cluster/releases/prometheus
   prune: true
   wait: true
-  timeout: 2m
+  timeout: 4m
 
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
@@ -49,6 +49,8 @@ spec:
   serviceAccountName: kustomize-controller
   path: ./cluster/releases/prometheus/resources
   prune: true
+  wait: true
+  timeout: 4m
 
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
@@ -67,4 +69,4 @@ spec:
   path: ./cluster/releases/nginx-ingress-controller
   prune: true
   wait: true
-  timeout: 2m
+  timeout: 4m
