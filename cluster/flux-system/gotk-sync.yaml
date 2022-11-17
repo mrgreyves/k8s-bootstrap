@@ -8,7 +8,7 @@ metadata:
 spec:
   interval: 1m0s
   ref:
-    branch: main
+    branch: update
   secretRef:
     name: flux-system
   url: ssh://git@github.com/mrgreyves/k8s-bootstrap

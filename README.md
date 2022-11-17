@@ -23,7 +23,7 @@ Kube prometheus stack -> Prometheus resources
 
 ```bash
 export GITHUB_TOKEN=*********** #Token для доступа в Github, нужны права на запись в репозиторий  
-flux bootstrap github --owner=REPO_OWNER --repository=REPO_NAME --path=FOLDER_PATH
+flux bootstrap github --owner=REPO_OWNER --repository=REPO_NAME --path=FOLDER_PATH --path=cluster
 ```
 
 Проверить результат можно следующий командой:  
